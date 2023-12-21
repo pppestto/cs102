@@ -50,7 +50,7 @@ with open('files/films.txt', encoding='utf-8') as file:
         movie_id, movie_name = film.replace('\n', '').split(',')
         m.update(int(movie_id), movie_name)
 
-with open('files/watch_history.txt', encoding='utf-8') as file:
+with open('files/history.txt', encoding='utf-8') as file:
     users = file.readlines()
     for user in users:
         history = list(map(int, user.replace('\n', '').split(',')))
